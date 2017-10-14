@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>TodoList</title>
     <link rel="stylesheet" href="font-awesome.css">
     <link rel="stylesheet" href="bootstrap.css">
@@ -12,7 +13,7 @@
         }
         input{
             border-radius: 5px;
-            width: 50%;
+            width: 100%;
             padding: 5px 10px;
         }
         input:focus{
@@ -26,11 +27,29 @@
                 <h1 style="color: white;">TO-DO-LIST</h1>
             </div>
         </div>
-        <div class="row p-5">
-            <div class="  col-8 mx-auto ">
-            <input type="text" placeholder="Enter task">
-                <button type="button" class="ml-4"> ADD TASK</button>
-                <button type="button" class="ml-4">DELETE TASK</button>
+        <div class="row pl-5 pt-5 pr-5 pb-4 justify-content-start ">
+            <div class="  col-md-6 mx-auto  p-1">
+            <input type="text" placeholder="Enter task" >
+            </div>
+            <div class=" col-md-6 p-1 " >
+                <div class="row justify-content-around  no-gutters">
+                <div class="col-auto  ">
+                <button type="button" class="btn btn-success btn-sm " style="align"> ADD</button>
+                </div>
+                <div class="col-auto ">
+                <button type="button" class="btn btn-danger btn-sm ">DELETE</button>
+                </div>
+                </div>
+            </div>
+        </div>
+        <div class="row ">
+            <div class="col-6 mx-auto  rounded" style="background: linear-gradient(to right, #5f2c82, #49a09d); ">
+                <div class="row rounded" style="color: #5f2c82; background-color: burlywood">
+                    <div class="col text-center rounded"><h3>Pending Tasks</h3></div>
+                </div>
+                <ol class="list-group">
+                    <li class="list-group-item p-2">Task 1</li>
+                </ol>
             </div>
         </div>
     </div>
