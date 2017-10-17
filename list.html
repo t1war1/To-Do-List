@@ -4,12 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>TodoList</title>
-    <link rel="stylesheet" href="font-awesome.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css"/>
     <link rel="stylesheet" href="bootstrap.css">
 </head>
 <style>
         body{
             background: linear-gradient(to right, #5f2c82, #49a09d);
+        }
+        .list-group-item{
+            display: list-item;
+            margin-left: 10px;
         }
         input{
             border-radius: 5px;
@@ -29,32 +33,32 @@
         </div>
         <div class="row pl-5 pt-5 pr-5 pb-4 justify-content-start ">
             <div class="  col-md-6 mx-auto  p-1">
-            <input type="text" placeholder="Enter task" >
+            <input type="text" placeholder="Enter task" id="add-new-todo" required>
             </div>
             <div class=" col-md-6 p-1 " >
                 <div class="row justify-content-around  no-gutters">
                 <div class="col-auto  ">
-                <button type="button" class="btn btn-success btn-sm " style="align"> ADD</button>
-                </div>
-                <div class="col-auto ">
-                <button type="button" class="btn btn-danger btn-sm ">DELETE</button>
+                    <button id="add-btn" type="submit" class="btn btn-success btn-sm " >ADD <i class="fa fa-plus fa-lg" aria-hidden="true"></i></button>
+                    <button id="del-btn" type="submit" class="btn btn-danger btn-sm " >DELETE TOPMOST <i class="fa fa-times" aria-hidden="true"></i></button>
                 </div>
                 </div>
             </div>
+            <p id="warning" style="color: red;display: none;">Hello.</p>
         </div>
-        <div class="row ">
-            <div class="col-6 mx-auto  rounded" style="background: linear-gradient(to right, #5f2c82, #49a09d); ">
-                <div class="row rounded" style="color: #5f2c82; background-color: burlywood">
-                    <div class="col text-center rounded"><h3>Pending Tasks</h3></div>
+        <div class="row mt-3">
+            <div class="col-7 rounded ml-auto mr-auto" style="background-color: white ">
+                <div class="row rounded" style="color: #5f2c82; background-color: burlywood;">
+                    <div class="col text-center "><h3>Pending Tasks</h3></div>
                 </div>
-                <ol class="list-group">
-                    <li class="list-group-item p-2">Task 1</li>
+                <ol class="list-group " id="list">
+                    <li class="list-group-item">No pending tasks.</li>
                 </ol>
             </div>
         </div>
     </div>
-
+<h3 id="message" style="color: red;">No pending Tasks.</h3>
 <script src="jquery-3.2.1.js"></script>
 <script src="bootstrap.js"></script>
+<script src="todolist.js"></script>
 </body>
 </html>
