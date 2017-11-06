@@ -5,13 +5,13 @@ const dbConfig={
     host:config.DB.HOST,
     user:config.DB.USER,
     password:config.DB.PASSWORD,
-    database:config.DB.PASSWORD
+    database:config.DB.DATABASE
 };
 
 exports.addTodo= (task,cb)=>{
     const conn=mysql2.createConnection(dbConfig);
     conn.query(
-      `INSERT INTO todos(task,done) VALUES(?,'false')`,
+      `INSERT INTO todos(task,done) VALUES(?,'0')`,
       [task],
         (err,result)=>{
             if (err)

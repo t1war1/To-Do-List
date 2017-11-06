@@ -14,8 +14,6 @@ app.set("views",path.join(__dirname,'views'));
 
 app.use('/todo',routes.todo);
 
-app.use('/',express.static(path.join(__dirname,"views")));
-
 app.listen(2222,()=>{
     console.log("Server started at http://localhost:2222/");
 });
