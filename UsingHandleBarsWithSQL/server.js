@@ -12,11 +12,9 @@ app.use(bodyparser.json({extended: true}));
 app.set("view engine","hbs");
 app.set("views",path.join(__dirname,'views'));
 
-app.use('/add',routes.todo);
+app.use('/todo',routes.todo);
 
-app.use((req,res)=>{
-    res.redirect('/add');
-});
+app.use('/',express.static(path.join(__dirname,"views")));
 
 app.listen(2222,()=>{
     console.log("Server started at http://localhost:2222/");

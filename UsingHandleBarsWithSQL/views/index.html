@@ -31,9 +31,10 @@
                 <h1 style="color: white;">TO-DO-LIST</h1>
             </div>
         </div>
+        <form action="http://localhost:2222/todo/add" method="post">
         <div class="row pl-5 pt-5 pr-5 pb-4 justify-content-start ">
             <div class="  col-md-6 mx-auto  p-1">
-            <input type="text" placeholder="Enter task" id="add-new-todo" required>
+            <input type="text" name="task" placeholder="Enter task" id="add-new-todo" required>
             </div>
             <div class=" col-md-6 p-1 " >
                 <div class="row justify-content-around  no-gutters">
@@ -45,6 +46,7 @@
             </div>
             <p id="warning" style="color: red;display: none;">Hello.</p>
         </div>
+        </form>
         <div class="row mt-3">
             <div class="col-7 rounded ml-auto mr-auto" style="background-color: white ">
                 <div class="row rounded" style="color: #5f2c82; background-color: burlywood;">

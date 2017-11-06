@@ -22,7 +22,7 @@ exports.addTodo= (task,cb)=>{
 };
 
 exports.getTodos=(cb)=>{
-  const conn=mysql2.createConnection(dbConfig),
+  const conn=mysql2.createConnection(dbConfig);
   conn.query(
       `SELECT * FROM todos`,
         (err,results,fields)=>{
