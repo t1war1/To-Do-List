@@ -2,11 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1892735d-d8fb-44de-ae30-9cc10ca81102" name="Default" comment="">
-      <change type="MOVED" beforePath="$PROJECT_DIR$/UsingHandleBarsWithSQL/views/index.html" afterPath="$PROJECT_DIR$/UsingHandleBarsWithSQL/views/index.hbs" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/UsingHandleBarsWithSQL/db/todotable.js" afterPath="$PROJECT_DIR$/UsingHandleBarsWithSQL/db/todotable.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/UsingHandleBarsWithSQL/routes/todos.js" afterPath="$PROJECT_DIR$/UsingHandleBarsWithSQL/routes/todos.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/UsingHandleBarsWithSQL/server.js" afterPath="$PROJECT_DIR$/UsingHandleBarsWithSQL/server.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Using local storage/list.html" afterPath="$PROJECT_DIR$/Using local storage/list.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Using local storage/todolist.js" afterPath="$PROJECT_DIR$/Using local storage/todolist.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -29,21 +27,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="server.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/UsingHandleBarsWithSQL/server.js">
+      <file leaf-file-name="todolist.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Using local storage/todolist.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="130">
-              <caret line="5" column="17" lean-forward="false" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
-              <folding />
+            <state relative-caret-position="314">
+              <caret line="52" column="0" lean-forward="false" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
+              <folding>
+                <element signature="e#2126#2376#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="todos.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/UsingHandleBarsWithSQL/routes/todos.js">
+      <file leaf-file-name="list.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Using local storage/list.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="182">
-              <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+            <state relative-caret-position="382">
+              <caret line="42" column="40" lean-forward="true" selection-start-line="42" selection-start-column="40" selection-end-line="42" selection-end-column="40" />
               <folding />
             </state>
           </provider>
@@ -80,6 +80,8 @@
         <option value="$PROJECT_DIR$/UsingHandleBarsWithSQL/routes/todos.js" />
         <option value="$PROJECT_DIR$/UsingHandleBarsWithSQL/views/index.hbs" />
         <option value="$PROJECT_DIR$/UsingHandleBarsWithSQL/server.js" />
+        <option value="$PROJECT_DIR$/Using local storage/list.html" />
+        <option value="$PROJECT_DIR$/Using local storage/todolist.js" />
       </list>
     </option>
   </component>
@@ -121,8 +123,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -133,24 +133,14 @@
             <path>
               <item name="my-todo-list" type="b2602c69:ProjectViewProjectNode" />
               <item name="my-todo-list" type="462c0819:PsiDirectoryNode" />
-              <item name="UsingHandleBarsWithSQL" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="my-todo-list" type="b2602c69:ProjectViewProjectNode" />
-              <item name="my-todo-list" type="462c0819:PsiDirectoryNode" />
-              <item name="UsingHandleBarsWithSQL" type="462c0819:PsiDirectoryNode" />
-              <item name="routes" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="my-todo-list" type="b2602c69:ProjectViewProjectNode" />
-              <item name="my-todo-list" type="462c0819:PsiDirectoryNode" />
-              <item name="UsingHandleBarsWithSQL" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="Using local storage" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -217,12 +207,17 @@
       <workItem from="1509482488253" duration="3232000" />
       <workItem from="1509819998805" duration="2629000" />
       <workItem from="1509991623888" duration="4837000" />
-      <workItem from="1509996485850" duration="23000" />
+      <workItem from="1509996485850" duration="111000" />
+      <workItem from="1511979836402" duration="598000" />
+      <workItem from="1512040098451" duration="2190000" />
+      <workItem from="1512121315855" duration="580000" />
+      <workItem from="1512232760970" duration="951000" />
+      <workItem from="1512272067845" duration="4966000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="66577000" />
+    <option name="totallyTimeSpent" value="75950000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="50" y="8" width="1368" height="780" extended-state="6" />
@@ -233,7 +228,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32961783" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2674961" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.43949044" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.4410828" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24944155" sideWeight="0.5067568" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5381026" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -253,7 +248,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="16" />
+      <option name="time" value="17" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -262,6 +257,40 @@
     <select />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/UsingHandleBarsWithSQL/routes/todos.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
+          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Using local storage/todolist.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1066">
+          <caret line="41" column="43" lean-forward="true" selection-start-line="41" selection-start-column="43" selection-end-line="41" selection-end-column="43" />
+          <folding>
+            <element signature="e#2126#2376#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/UsingHandleBarsWithSQL/server.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="130">
+          <caret line="5" column="17" lean-forward="false" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/UsingHandleBarsWithSQL/routes/todos.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
+          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/UsingHandleBarsWithSQL/server.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="130">
@@ -479,20 +508,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/UsingHandleBarsWithSQL/views/todolist.js" />
-    <entry file="file://$PROJECT_DIR$/Using local storage/todolist.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-156">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Using local storage/list.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="26">
-          <caret line="16" column="9" lean-forward="true" selection-start-line="16" selection-start-column="9" selection-end-line="16" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/UsingHandleBarsWithSQL/node_modules/mysql2/lib/connection.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="964">
@@ -504,7 +519,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-423">
           <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -512,7 +526,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1508">
           <caret line="58" column="44" lean-forward="true" selection-start-line="58" selection-start-column="44" selection-end-line="58" selection-end-column="44" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -529,6 +542,32 @@
         <state relative-caret-position="182">
           <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Using local storage/jquery-3.2.1.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="166">
+          <caret line="3382" column="12" lean-forward="false" selection-start-line="3382" selection-start-column="12" selection-end-line="3382" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Using local storage/list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="382">
+          <caret line="42" column="40" lean-forward="true" selection-start-line="42" selection-start-column="40" selection-end-line="42" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Using local storage/todolist.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="314">
+          <caret line="52" column="0" lean-forward="false" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
+          <folding>
+            <element signature="e#2126#2376#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
