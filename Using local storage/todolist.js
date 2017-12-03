@@ -9,7 +9,6 @@ let count=-1;
 list.html("");
 addbtn.click(()=> {
    let taskvalue = value.val();
-   alert(taskvalue);
     if(taskvalue!=="")
     {
         warning.css("display","none");
@@ -42,42 +41,46 @@ addbtn.click(()=> {
 
         removeElement.click(()=>{
             removeElement.parent().remove();
+            count--;
+            if(count===0)
+            {
+                message.html("Great! You've completed all tasks. Enter more");
+                message.css("display","block");
+
+            }
         });
 
-//         increasePriority.onclick=function () {
-//             let p=increasePriority.parentNode;
-//             let a=p.previousSibling.childNodes[0].innerHTML;
-//             p.previousSibling.childNodes[0].innerHTML=p.childNodes[0].innerHTML;
-//             p.childNodes[0].innerHTML=a;
-//         };
+            increasePriority.click(()=>{
+                let p=increasePriority.parent().prev();
+                let temp=p.children(":first").text();
+                p.children(":first").text(increasePriority.parent().children(":first").text());
+                increasePriority.parent().children(":first").text(temp);
+            });
 
-//         decreasePriority.onclick=function () {
-//             let p=decreasePriority.parentNode;
-//             let a=p.nextSibling.childNodes[0].innerHTML;
-//             p.nextSibling.childNodes[0].innerHTML=p.childNodes[0].innerHTML;
-//             p.childNodes[0].innerHTML=a;
-//         }
-//     }
-//     else{
-//         warning.innerHTML="Enter the task correctly!!!";
-//         warning.style.display='block';
-//     }
-//
-
-    }}
+            decreasePriority.click(()=>{
+               let p=decreasePriority.parent().next();
+               let temp=p.children(":first").text();
+               p.children(":first").text(decreasePriority.parent().children(":first").text());
+               decreasePriority.parent().children(":first").text(temp);
+            });
+    }
+    else{
+        warning.html("Enter the task correctly");
+        warning.css("display","block");
+    }
+    }
 );
 
-delBtn.onclick= ()=>
-{
-    if(list.childElementCount!==0)
-    list.removeChild(list.childNodes[0]);
-    count--;
-    console.log(count);
-    if(count===0)
-    {
-        message.innerHTML="Great! You've completed all tasks.";
-        message.style.display='block';
-    }
-};
+    delBtn.click(()=>{
+       if(list.children().length!==0)
+           list.children(":first").remove();
+       count--;
+       console.log(count);
+       if(count===0)
+       {
+           message.html("Great! You've completed all tasks. Enter more");
+           message.css("display","block");
 
+       }
+    });
 });
