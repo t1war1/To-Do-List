@@ -36,10 +36,11 @@ addbtn.click(()=> {
         let decreasePriority=$("<i></i>");
         decreasePriority.addClass("fa fa-arrow-down col-1 border").attr("title","Decrease Priority");
         task.append(decreasePriority);
-
+        task.hide();
         list.append(task);
-
+        task.show("blind",{direction:"down"},"slow");
         removeElement.click(()=>{
+            removeElement.parent().hide("blind",{direction:"up"},"slow");
             removeElement.parent().remove();
             count--;
             if(count===0)
@@ -72,8 +73,9 @@ addbtn.click(()=> {
 );
 
     delBtn.click(()=>{
-       if(list.children().length!==0)
-           list.children(":first").remove();
+       if(list.children().length!==0) {
+           list.children(":first").hide("blind",{direction:"up"},"slow").remove();
+       }
        count--;
        console.log(count);
        if(count===0)
